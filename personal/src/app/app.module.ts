@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { TemplateComponent } from './personal/model/template/template.component';
 import { MenuComponent } from './personal/model/menu/menu.component';
 
+//
+
 @NgModule({
   declarations: [
     AppComponent,

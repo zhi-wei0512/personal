@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Menu } from './menu';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
 
   constructor() { }
-
+  menu: Menu
   ngOnInit(): void {
   }
 
