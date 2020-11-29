@@ -1,0 +1,12 @@
+.carousel .carousel-item {
+  height: 700px;
+}
+
+.carousel .carousel-item img {
+  min-height: 700px;
+  max-height: 500px;
+  object-fit: cover;
+}
+.carousel-control-prev-icon{
+  background-color: transparent;
+}
