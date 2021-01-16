@@ -12,12 +12,12 @@ export class ModelService {
   source = interval(5000);
   btn = document.querySelector('#btn');
   api = merge(this.aSubject, this.source);
-  afterCallApi =
-    this.api.pipe(
-      map(val => console.log('getdata'))
-    )
-  clickAdd() {
-    this.aSubject.next('hello');
-  }
+  // afterCallApi =
+  //   this.api.pipe(
+  //     map(val => console.log('getdata'))
+  //   )
+  // clickAdd() {
+  //   this.aSubject.next('hello');
+  // }
 
 }

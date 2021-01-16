@@ -10,3 +10,24 @@
 .carousel-control-prev-icon{
   background-color: transparent;
 }
+.Footer {
+  height: 100px;
+  position: relative;
+  margin-top: -100px;
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+ .c-footer a {
+  font-size: 19px;
+}
+.c-footer .c-footer-nav a {
+  display: block;
+  padding: 1em .5em .5em;
+  color: #000;
+  position: relative;
+}
+.c-footer {
+  background-color: bisque;
+}

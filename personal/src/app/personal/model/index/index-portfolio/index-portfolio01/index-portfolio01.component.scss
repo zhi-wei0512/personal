@@ -1,0 +1,22 @@
+.ProductList-list .product-item {
+  width: 25%;
+  padding: 0!important;
+  margin: 0;
+  position: relative;
+}
+.product-item a {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  position: relative;
+}
+.ProductList-list .boxify-image {
+  padding-bottom: 100%;
+}
+.img{
+  width: 100px;
+}
