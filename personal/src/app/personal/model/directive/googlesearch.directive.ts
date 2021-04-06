@@ -19,7 +19,7 @@ export class googleSearch {
 
  search(query){
    query = JSON.stringify(query);
-    this.router.navigate(['./','search'],
+    this.router.navigate(['../','GoogleSearch'],
     {queryParams:{search : query}, relativeTo: this.route });
 }
 

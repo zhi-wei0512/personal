@@ -1,0 +1,44 @@
+<div class="caculator">
+  <input class="display">
+    {{Ans}}
+
+  <div class="row">
+      <ul class="key-row">
+          <li data-type="sp">AC</li>
+          <li data-type="sp">DEL</li>
+          <li data-type="opr">MOD</li>
+          <li data-type="opr">/</li>
+      </ul>
+  </div>
+  <div class="row">
+      <ul class="key-row">
+        <button data-type="num" (click)="num(7)">7</button>
+        <button data-type="num" (click)="num(8)">8</button>
+        <button data-type="num" (click)="num(9)">9</button>
+          <li data-type="opr">X</li>
+      </ul>
+  </div>
+  <div class="row">
+      <ul class="key-row">
+        <button data-type="num" (click)="num(4)">4</button>
+        <button data-type="num" (click)="num(5)">5</button>
+        <button data-type="num" (click)="num(6)">6</button>
+          <li data-type="opr">─</li>
+      </ul>
+  </div>
+  <div class="row">
+      <ul class="key-row">
+          <button data-type="num" (click)="num(1)">1</button>
+          <button data-type="num" (click)="num(2)">2</button>
+          <button data-type="num" (click)="num(3)">3</button>
+          <button data-type="opr" (click)="opr('+')">+</button>
+      </ul>
+  </div>
+  <div class="row">
+      <ul class="key-row">
+        <button data-type="num" (click)="num(0)">0</button>
+          <li data-type="sp-num">.</li>
+          <li data-type="sp" class="equal">=</li>
+      </ul>
+  </div>
+</div>

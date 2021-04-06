@@ -1,0 +1,65 @@
+<div class="main" id="content">
+  <!-- breadcrumd -->
+  <section class="breadcrumb-section">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/ArticleContent/5b93cc99-3a1e-4000-a545-aa5dfe375708" title="首頁">首頁</a>
+          </li>
+          <li class="breadcrumb-item"><a href="#" title="購票資訊">購票資訊</a></li>
+          <li class="breadcrumb-item"><a href="#" title="快速查詢">快速查詢</a></li>
+          <li class="breadcrumb-item"><a href="#" title="時刻表與票價查詢">時刻表與票價查詢</a></li>
+        </ol>
+        <button class="btn btn-print hidden-s" title="列印本頁" id="btnPrintPage">
+          <i class="kyicon-icon_printer"></i>列印本頁
+        </button>
+      </nav>
+    </div>
+  </section>
+  <!-- 標題 -->
+  <section class="timetable-header">
+    <h2 class="title-01 h3">時刻表與票價查詢</h2>
+  </section>
+  <!-- 查詢區 -->
+  <section class="timetable-search-frame bg-grey">
+    <div class="container">
+      <div class="ha-nav-content">
+        <div class="tt-search-panel">
+          <div class="tt-col">
+            <div class="inline-input-group row">
+              <div class="col-input col-5">
+                <app-select-option labelName='起始站' (value)="getTHSRstationValue($event,true)"></app-select-option>
+              </div>
+              <div class="col-input col-5">
+                <app-select-option labelName='終點站' (value)="getTHSRstationValue($event,false)"></app-select-option>
+              </div>
+            </div>
+          </div>
+
+          <div class="tt-col">
+            <div class="inline-input-group row" id="tot-1">
+              <div class="col-input col-6">
+                <div class="input-group date" data-provide="datepicker">
+                  <input type="text" class="form-control" placeholder="Datepicker" class="form-control" bsDatepicker>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tt-col">
+            <div class="inline-input-group row" id="tot-1">
+              <div class="col-input col-12">
+                <label class="input-smalllabel" for="typesofticket"> </label>
+                <select class="form-control mt-0 select-type01" title="票種" id="typesofticket">
+                  <option value="tot-1">單程</option>
+                  <option value="tot-2" selected="">去回程</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div>
+    <table id="table"></table>

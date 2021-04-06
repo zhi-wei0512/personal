@@ -1,0 +1,45 @@
+<div class="input-group mb-3 input1">
+  <input type="input" class="form-control" placeholder="input1" aria-label="Recipient's username"
+    aria-describedby="basic-addon2" #gsInput1 googleSearch [(ngModel)]="AllValue.Input1">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" name="input1">
+      <!-- <span class="glyphicon glyphicon-name"></span> -->
+    </button>
+  </div>
+</div>
+
+<div class="input-group mb-3 input2">
+  <input type="input" class="form-control" placeholder="input2" aria-label="Recipient's username"
+    aria-describedby="basic-addon2" #gsInput2 googleSearch name="Input2" [(ngModel)]="AllValue.Input2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button">
+      <!-- <span class="glyphicon glyphicon-name"></span> -->
+    </button>
+  </div>
+</div>
+
+<div class="input-group mb-3 input3">
+  <input type="input" class="form-control" placeholder="input3" aria-label="Recipient's username"
+    aria-describedby="basic-addon2" #gsInput3 googleSearch name="Input3" [(ngModel)]="AllValue.Input3">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button">
+      <!-- <span class="glyphicon glyphicon-name"></span> -->
+    </button>
+  </div>
+</div>
+
+<div class="input-group mb-3 input4">
+  <input type="input" class="form-control" placeholder="input3" aria-label="Recipient's username"
+    aria-describedby="basic-addon2" #gsInput4 googleSearch #gs='googleSearch'>
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button">
+      <!-- <span class="glyphicon glyphicon-name"></span> -->
+    </button>
+  </div>
+</div>
+
+<button class="btn btn-outline-secondary" type="button" (click)="gs.search(AllValue)">查詢
+</button>
+
+<script async src="https://cse.google.com/cse.js?cx=5deacc45464bb8db1"></script>
+<div class="gcse-search"></div>

@@ -1,0 +1,113 @@
+// breadcrumb 麵包削區塊
+.breadcrumb-section {
+  background-color: #585455;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.breadcrumb-section nav {
+  position: relative;
+}
+.breadcrumb {
+  background-color: transparent;
+  padding: 8px 0;
+}
+
+.breadcrumb .breadcrumb-item {
+  font-size: .8rem;
+  margin-bottom: 0;
+}
+ol>li {
+  line-height: 1.5;
+  font-size: .95rem;
+  margin-bottom: 10px;
+}
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+.breadcrumb .breadcrumb-item a {
+  color: #fff;
+}
+// 麵包屑 > 按鈕
+.breadcrumb ~ .btn {
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+.btn-print i {
+  font-size: 1.2rem;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 5px;
+}
+.btn-print:hover {
+  /* color: #ca4f0f; */
+  color: #f5a552;
+}
+.btn-print {
+  color: #fff;
+  font-size: .9rem;
+}
+// 標題 時刻表與票價查詢 區塊
+.title-01 {
+  font-size: 1.75rem;
+  position: relative;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  text-align: center;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #333;
+}
+.title-01:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 90px;
+  height: 3px;
+  left: 50%;
+  bottom: 0;
+  background-color: #ca4f0f;
+  margin-left: -45px;
+}
+
+
+// 查詢條件區塊
+.bg-grey {
+  background-color: #F9F9F9 !important;
+}
+.timetable-search-frame {
+  padding: 50px 0;
+}
+.timetable-search-frame .container {
+  position: relative;
+}
+.ha-nav-content {
+  padding: 15px;
+  background-color: #fff;
+}
+.tt-search-panel {
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  align-items: start;
+}
+.timetable-search-frame .tt-search-panel .tt-col:nth-child(1) {
+  flex: 1 1 26%;
+}
+.inline-input-group.row {
+  margin-left: -6px;
+  margin-right: -6px;
+}
+.inline-input-group.row>.col-input {
+  padding-left: 8px;
+  padding-right: 8px;
+}
