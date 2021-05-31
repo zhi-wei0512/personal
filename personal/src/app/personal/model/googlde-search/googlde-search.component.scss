@@ -1,0 +1,64 @@
+// ul.c-menu-main li{
+//   position: relative;
+//   float: left;
+//   list-style: none;
+// }
+
+// ul.c-menu-main li a{
+//  display: block;
+//  padding: 12px 20px;
+// }
+
+// //step1
+// ul.c-menu-main > li > a{
+//   border-bottom:  1px;
+// }
+// ul.c-menu-main > li > a :hover{
+//   border-bottom:  1px;
+// }
+// ul.c-menu-main > li a:hover{
+//   border-bottom:  1px;
+// }
+
+// //step2
+
+// ul.c-menu-main li ul{
+//   display: none;
+//   float: left;
+//   position: absolute;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// ul.c-menu-main  li:hover > ul{
+//   display: block;
+// }
+// ul.c-menu-main ul li{
+//   border-bottom:  1px;
+// }
+// // step3
+// ul.c-menu-main ul a{
+//   width: 142px;
+//   padding: 10px 12px;
+//   color: #666;
+//   background: #EEE;
+// }
+// ul.c-menu-main ul a:hover{
+//   background: #CCC;
+// }
+// ul.c-menu-main ul li:hover > ul{
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   left: 150px;
+// }
+
+ul li.lvOne{
+  // display: none;
+}
+ul li.lvtwo{
+  // display: none;
+}
+ul li.lvthree{
+  // display: none;
+}

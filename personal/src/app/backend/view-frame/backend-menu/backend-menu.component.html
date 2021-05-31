@@ -1,0 +1,46 @@
+<!-- top-menu -->
+<div id="nav_menu_set"> <!-- 修改id="nav_menu_set" 啟動menu產生 -->
+  <nav class="collapse navbar-collapse topMenu">
+    <ul class="nav navbar-nav in">
+      <ng-container *ngFor="let level_one_data of data; let i = index">
+        <!--LEVEL 1-->
+        <li class="dropdown menu-large" *ngIf="level_one_data.level == 3" ngbDropdown role="group" aria-label="Button group with nested dropdown" placement="bottom left">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">{{level_one_data.name}}<b class="caret"></b></a>
+          <ul class="dropdown-menu megamenu row" ngbDropdownMenu>
+            <li class="col-md-4 col-sm-12 col-xs-12 pd_btm" *ngFor="let level_two_data of level_one_data.menu">
+              <ul>
+                <li class="dropdown-header">{{level_two_data.name}}</li>
+                <li class="col-md-6 col-sm-6 col-xs-6" *ngFor="let level_three_data of level_two_data.menu">
+                  <ng-container *ngIf="level_three_data.url.indexOf('http') ==-1;then serverSide; else outSide "></ng-container>
+                  <ng-template #serverSide>
+                    <a routerLink="{{level_three_data.url}}">{{level_three_data.name}}</a>
+                  </ng-template>
+                  <ng-template #outSide>
+                    <a href="{{level_three_data.url}}" target="_blank">{{level_three_data.name}}</a>
+                  </ng-template>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <!--LEVEL 2-->
+        <li class="dropdown menu-large" *ngIf="level_one_data.level == 2" ngbDropdown role="group" aria-label="Button group with nested dropdown" placement="bottom left">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">{{level_one_data.name}}<b class="caret"></b></a>
+          <ul class="dropdown-menu megamenu row" ngbDropdownMenu>
+            <li class="col-md-4" *ngFor="let level_two_data of level_one_data.menu">
+              <a routerLink="{{level_two_data.url}}">{{level_two_data.name}}</a>
+            </li>
+          </ul>
+        </li>
+
+        <!--LEVEL 3-->
+        <li *ngIf="level_one_data.level == 1">
+          <a routerLink="{{level_one_data.url}}">{{level_one_data.name}}</a>
+        </li>
+      </ng-container>
+
+    </ul>
+  </nav>
+</div>
+<!-- /.top-menu -->

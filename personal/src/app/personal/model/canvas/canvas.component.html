@@ -1,0 +1,18 @@
+<ng-container >
+  <div id="myCloudTag">
+    <canvas id="myTag" width="800" height="800">
+    </canvas>
+  </div>
+  <div id="tags">
+    <ul>
+      <li *ngFor="let item of newsKeyWords;let i = index">
+        <a [routerLink]="newsKeyWords.path" (click)="ininitSearchService.changeState(item.label)"
+          [ngStyle]="countSize(item.value)">{{item.label}}</a></li>
+
+    </ul>
+  </div>
+</ng-container>
+
+<canvas id="canvas"></canvas>
+
+<canvas #canvas id="myTag" width="800" height="800"></canvas>

@@ -1,44 +1,72 @@
-
 .caculator {
-  min-width: 350px;
-  background-color: #ddd;
-  box-shadow: 0 0 20px 0px rgb(0 0 0 / 50%);
-  border-radius: 3px;
-}
-.display {
+  margin: 10px auto;
+  border: 5px #ffac55 solid;
+  width: 550px;
+  height: 550px;
   display: flex;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  background: #777;
-  color: #fff;
-  font-size: 24px;
-  letter-spacing: 3px;
-  margin: 15px 10px 20px 15px;
-  border: 2px solid #1da5a5;
-  flex-flow: column nowrap;
-  cursor: pointer;
-  height: 75px;
-  padding-right: 5px;
-  overflow: hidden;
-  transition: all 0.1s ease-in;
-}
-.key-row {
-  display: flex;
-  border-bottom: 1px solid #ddd;
-  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
   align-items: center;
+  background-color: #eee;
 }
-li {
-  display: inline-block;
-  margin: 10px 10px 10px 10px;
-  width: 65px;
-  height: 40px;
-  border: solid 1px black;
-  font-size: 16px;
-  cursor: pointer;
-  color: #666;
+h1{
+  margin: 10px auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.1s ease-in;
+  justify-content: space-around;
+}
+.row {
+ font-size: 40px;
+}
+
+.btn{
+  border: 3px #ffac55 solid;
+  background-color: lemonchiffon;
+  padding: 0.375rem 1.75rem;
+  margin:5px 10px 15px 20px;
+}
+.input{
+  border:3px rgb(140, 146, 61) dotted;
+}
+
+
+
+.hot_container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	min-height: 80vh;
+	width: 70%;
+}
+.hot_container .circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+.hot_container a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	color: #FFF;
+}
+
+.color1 {
+	background: rgba(255, 168, 168, .5);
+}
+.color1 a{
+	background: rgba(255, 168, 168, 1);
+}
+
+.color2 {
+	background: rgba(0, 168, 168, .5);
+}
+.color2 a{
+	background: rgba(0, 168, 168, 1);
 }
