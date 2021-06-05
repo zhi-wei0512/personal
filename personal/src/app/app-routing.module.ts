@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'Computer', component: ComputerComponent },
   { path: 'Array', component: ArrayComponent },
   { path: 'FlopGame', component: FlopGameComponent },
-  { path: 'Canvas', component: CanvasComponent },
+  { path: 'TagCanvas', component: CanvasComponent },
   { path: '', loadChildren: 'src/app/backend/backend.module#BackendModule' },
 ];
 

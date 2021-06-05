@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 declare const TagCanvas: any;
 
 @Component({
@@ -6,22 +6,32 @@ declare const TagCanvas: any;
   templateUrl: './canvas.component.html',
   styleUrls: ['./canvas.component.scss'],
 })
-export class CanvasComponent implements OnInit {
-  @ViewChild(' canvas ', { static: true })
-  canvas: ElementRef<HTMLCanvasElement>;
-
-  newsKeyWords = [
-    { item: '123', label: '蠟筆小新' },
-    { item: '456', label: '櫻桃小丸子' },
-    { item: '789', label: '小丸子' },
-    { item: '102', label: '大丸子' },
+export class CanvasComponent implements OnInit, AfterViewInit {
+  KeyWords = [
+    { item: '1', label: '蠟筆小新' },
+    { item: '2', label: '櫻桃小丸子' },
+    { item: '3', label: '小丸子' },
+    { item: '4', label: '大丸子' },
+    { item: '5', label: '蠟筆小新' },
+    { item: '6', label: '櫻桃小丸子' },
+    { item: '7', label: '小丸子' },
+    { item: '8', label: '大丸子' },
+    { item: '9', label: '蠟筆小新' },
+    { item: '10', label: '櫻桃小丸子' },
+    { item: '11', label: '小丸子' },
+    { item: '12', label: '大丸子' },
+    { item: '13', label: '蠟筆小新' },
+    { item: '14', label: '櫻桃小丸子' },
+    { item: '15', label: '小丸子' },
+    { item: '16', label: '大丸子' },
   ];
-  constructor( private ctx: CanvasRenderingContext2D) {
 
-  }
+  constructor() {}
 
-  ngOnInit(): void {
-    this.ctx = this.canvas.nativeElement.getContext('2d');
+  ngOnInit(): void {}
+
+  ngAfterViewInit(): void {
+    this.initCanvas();
   }
   initCanvas() {
     TagCanvas.Start('myTag', 'tags', {
@@ -31,11 +41,6 @@ export class CanvasComponent implements OnInit {
       weight: true,
       weightMode: 'both',
       weightSize: 1,
-      weightGradient: {
-        0: '測試',
-        0.4: '測試1',
-        0.8: '測試3',
-      },
       textFont: '微軟正黑體',
       outlineColour: '#eeee',
       bgRadius: 5,

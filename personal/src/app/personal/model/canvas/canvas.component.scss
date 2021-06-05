@@ -1,27 +1,49 @@
-#myCloudTag {
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  width: 0;
-  height: 100%;
-}
+// #myCloudTag {
+//   position: absolute;
+//   left: 50%;
+//   width: 0;
+//   height: 100%;
+// }
 
+// #myCloudTag canvas {
+//   position: absolute;
+//   top: 55%;
+//   left: 50%;
+//   transform: translateX(-50%) translateY(-50%);
+//   height: 100%;
+//   z-index: 1;
+//   background-color: #ddd9d9
+// }
 #myCloudTag canvas {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  /* width: auto; */
-  height: 100%;
-  z-index: 1;
+  margin: 10px auto;
+  border: 5px #ffac55 solid;
+  width: 550px;
+  height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
 }
-
+h1{
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+}
 .tagList {
-  /* color: black; */
   font-weight: 1000;
   font-size: 30px
 }
 
 #tags {
   display: none;
+  font-size: 16px;
+}
+
+a {
+  color: #d3560d;
+  text-decoration: none;
+  background-color: transparent;
 }
