@@ -1,0 +1,223 @@
+/* #index_main .article Document */
+.article {
+  width: 86%;
+  float: left;
+  margin-bottom: 25px;
+  margin-left: 6%;
+}
+.article h3 {
+  font-size: 2em;
+  padding-bottom: 20px;
+}
+.article .news-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+.article .news-list li {
+  padding: 15px 0px 8px 0px;
+  border-bottom: 1px solid #000;
+}
+.article .news-list li:first-child {
+  border-top: 3px solid #000;
+}
+.article .news {
+  display: block;
+  clear: both;
+  position: relative;
+}
+.article .news .info .title {
+  font-weight: normal !important;
+  width: 80%;
+  padding: 0 !important;
+  margin: 10px 0px !important;
+  font-size: 1.1em !important;
+}
+.article .news .info .desc {
+  margin-bottom: 0;
+  font-size: medium;
+}
+.article .news .date {
+  float: left;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.article .news .date {
+  line-height: 1;
+  z-index: 1;
+}
+.article .news .date-block {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0px 0px;
+  background-color: transparent !important;
+}
+.article .news .date .day {
+  font-size: 2em;
+  display: block;
+  line-height: 36px;
+  padding: 0px 0px;
+  z-index: 10000;
+}
+.article .news span {
+  margin-top: 25px !important;
+}
+
+.article .news .year {
+  display: inline-block !important;
+  font-size: large !important;
+  font-weight: normal !important;
+  float: left;
+}
+
+.article .news .month {
+  display: inline-block !important;
+  font-size: large !important;
+  font-weight: normal !important;
+}
+.article .news .day {
+  display: inline-block !important;
+  font-size: large !important;
+  font-weight: normal !important;
+  float: right;
+}
+.article .news .info {
+  margin-left: 0 !important;
+}
+.article .news .info h2.title {
+  font-size: x-large;
+  font-weight: bold;
+}
+.article .btn-more {
+  top: 0px;
+  right: 0 !important;
+}
+.article .text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.article .text-ellipsis.multiline {
+  display: none;
+}
+.article time {
+  width: inherit !important;
+  height: inherit !important;
+  position: absolute;
+  right: 0;
+  left: inherit !important;
+  top: 0px;
+  background: transparent !important;
+}
+
+.article time i {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .article h2 {
+    text-align: left;
+  }
+  .article {
+    position: relative;
+  }
+  .article .thumbnail {
+    padding: 0;
+    border: none;
+  }
+  .article h3 {
+    font-size: 2em;
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 640px) {
+  .article time {
+    position: absolute;
+    left: 0px !important;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    border-radius: 0%;
+    top: 6px;
+    padding: 0 0px;
+  }
+  .article .news .info {
+    margin-left: 0px;
+  }
+  .article .news-list {
+    list-style: none;
+    margin: 0;
+    padding: 0px 15px;
+  }
+  .article .news .day,
+  .article .news .month {
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 0;
+  }
+  .article .news .day {
+    position: absolute;
+    left: 73px;
+  }
+  .article .news .info .title {
+    font-weight: normal !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 18px 0px 0px !important;
+    font-size: 1.1em !important;
+  }
+  .article .news span {
+    margin-top: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .article .btn-more {
+    top: auto;
+  }
+  .article {
+    width: 100% !important;
+    float: left;
+  }
+}
+.article .btn1 {
+  color: #000;
+  border: 1px solid #000;
+  padding: 5px 25px;
+  margin-top: 30px;
+}
+.btnArea {
+  text-align: center;
+  margin: 20px 0 50px 0;
+}
+@media only screen and (max-width: 1200px) {
+  .article {
+    width: 100%;
+    float: left;
+    margin-bottom: 25px;
+    margin-left: 0%;
+  }
+}
+.article a.more {
+  position: absolute;
+  top: 15px !important;
+  right: 20px;
+  color: inherit;
+  text-decoration: none;
+}
+.article a:hover {
+  color: #901 !important;
+  cursor: pointer;
+}
+.article .cont-tit {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  margin-bottom: 1.5rem;
+  position: relative;
+}

@@ -1,0 +1,18 @@
+<section class="row clearfix bg-img">
+  <div class="col-md-12">
+    <div class="custom">
+      <div class="index-uesfullink-cont" *ngIf="graphicalLinks">
+        <div class="index-uesfullink-item" *ngFor="let graphicalLink of graphicalLinks;let i= index">
+          <a href="{{graphicalLink.url}}" target="_blank" title="{{graphicalLink.name}}">
+            <div class="useful-service-item">
+              <img src="{{graphicalLink.image}}" alt="{{graphicalLink.name}}">
+              <div class="index-uesfullink-cot" >
+                {{graphicalLink.name}}
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

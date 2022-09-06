@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -16,9 +16,6 @@
         <a class="nav-link " href="#">動態表單</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link "routerLink="../dataTable">簡易CRUD</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link " routerLink="../GoogleTranslate">Google 翻譯</a>
       </li>
       <li class="nav-item">
@@ -28,10 +25,10 @@
         <a class="nav-link " routerLink="../Array">Array練習</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " routerLink="../FlopGame">FlopGame</a>
+        <a class="nav-link " routerLink="../TagCanvas">TagCanvas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " routerLink="../TagCanvas">TagCanvas</a>
+        <a class="nav-link " routerLink="../NgxSmartMadal">NgxSmartMadal</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -40,4 +37,49 @@
     </form>
   </div>
 </nav>
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
+<nav class="navbar-collapse topMenu">
+  <ul class="nav navbar-nav">
+    <ng-container *ngFor="let level_one_data of data">
+      <!--LEVEL 1-->
+      <li class="dropdown menu-large">
+        <ng-container *ngIf="level_one_data.moduleKey !== 'LINKING'">
+          <a *ngIf="level_one_data.menus" class="dropdown-toggle" href="#" data-toggle="dropdown">{{level_one_data.name}}
+            <b class="caret"></b>
+          </a>
+          <a *ngIf="!level_one_data.menus" class="dropdown-toggle" routerLink="{{level_one_data.path}}" data-toggle="dropdown">{{level_one_data.name}}
+          </a>
+        </ng-container>
+        <ng-container *ngIf="level_one_data.moduleKey == 'LINKING'">
+          <a href="{{level_one_data.path}}"  target="_blank" title="{{'openNewWindow' | translate}}">{{level_one_data.name}}</a>
+        </ng-container>
+        <div class="dropdown-menu megamenu row" *ngIf="level_one_data.menus">
+          <ul style="max-width: 900px;margin: 0 46px;">
+            <li class="col-md-3 col-sm-12 col-xs-12 pd_btm"
+                *ngFor="let level_two_data of level_one_data.menus">
+              <ul >
+                <li class="dropdown-header">
+                  <ng-container *ngIf="level_two_data.moduleKey !== 'LINKING'">
+                    <a *ngIf="level_two_data.menus" class="level_two_data_a">{{level_two_data.name}}</a>
+                    <a *ngIf="!level_two_data.menus" routerLink="{{level_two_data.path}}">{{level_two_data.name}}</a>
+                  </ng-container>
+                  <ng-container *ngIf="level_two_data.moduleKey == 'LINKING'">
+                    <a href="{{level_two_data.path}}"  target="_blank" title="{{'openNewWindow' | translate}}">{{level_two_data.name}}</a>
+                  </ng-container>
+                </li>
+                <li class="col-md-12 level-three" *ngFor="let level_three_data of level_two_data.menus">
+                  <ng-container *ngIf="level_three_data.moduleKey !== 'LINKING'">
+                    <a routerLink="{{level_three_data.path}}">{{level_three_data.name}}</a>
+                  </ng-container>
+                  <ng-container *ngIf="level_three_data.moduleKey == 'LINKING'">
+                    <a href="{{level_three_data.path}}"  target="_blank" title="{{'openNewWindow' | translate}}">{{level_three_data.name}}</a>
+                  </ng-container>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ng-container>
+  </ul>
+</nav>

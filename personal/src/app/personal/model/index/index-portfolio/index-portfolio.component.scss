@@ -1,0 +1,66 @@
+/* #index_main portfolio  */
+.portfolio {
+  clear: both;
+}
+.portfolio .aside-box {
+  margin-bottom: 30px;
+  position: relative;
+}
+.image-wrap {
+  overflow: hidden;
+  position: relative;
+  max-height: 460px;
+}
+.portfolio img[class] {
+  margin: auto;
+  width: 100% !important;
+  height: 100% !important;
+}
+.portfolio .details {
+  padding: 5px 25px 15px 0px;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  background-image: url("http://tcra.goodays.cc:8100/images/v030/detail_bg.png");
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+.portfolio .text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.portfolio .multiline {
+  white-space: normal;
+  font-size: 1em;
+  padding-right: 40px;
+  padding-left: 15px;
+  top: 46%;
+  position: relative;
+  font-weight: 600;
+}
+.aside-box:hover .image-wrap img {
+  -moz-transform: scale(1.075);
+  -webkit-transform: scale(1.075);
+  -ms-transform: scale(1.075);
+  transform: scale(1.075);
+}
+
+@media only screen and (max-width: 974px) {
+  section.portfolio {
+    display: flex !important;
+  }
+}
+.col-lg-10.col-lg-offset-1.col-md-12 {
+  margin-left: 7%;
+}
+.portfolio a:hover {
+  color: #901 !important;
+  cursor: pointer;
+}
+.portfolio a.more {
+  position: absolute;
+  top: 13px !important;
+  right: 20px;
+  color: inherit;
+  text-decoration: none;
+}

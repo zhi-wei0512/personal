@@ -28,8 +28,8 @@
     "install": "^0.13.0",
     "jquery": "^3.6.0",
     "ngx-bootstrap": "^6.2.0",
-    "primeicons": "^4.1.0",
-    "primeng": "^11.4.0",
+    "ngx-highlight-js": "^11.0.0",
+    "ngx-smart-modal": "^7.4.1",
     "rxjs": "^6.6.3",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

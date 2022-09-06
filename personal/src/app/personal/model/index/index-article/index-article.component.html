@@ -1,0 +1,26 @@
+<section class="article">
+  <div>
+    <div class="cont-tit">
+      <h2>最新消息</h2>
+      <a class="more"><span>更多資訊</span></a>
+    </div>
+    <div class="p-h-lg">
+      <ul class="news-list">
+        <li class="news" *ngFor="let rd of remoteData; let i = index;">
+          <div class="info">
+            <a  title="{{rd.title}}">
+              <h3 class="title text-overflow">
+                {{rd.title}}
+              </h3>
+            </a>
+            <time>
+              <span class="year">
+                {{rd.openStart}}
+              </span>
+            </time>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

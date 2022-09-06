@@ -1,0 +1,64 @@
+<section class="col-md-6 banner_03">
+  <div class="col-lg-10 col-lg-offset-2 col-md-12" style="float: right;">
+    <div class="banner_03">
+      <div class="row p-h-lg">
+        <div id="banner_Carousel2" class="carousel slide bs-slider" data-ride="carousel" *ngIf="newBanner">
+          <ol class="carousel-indicators" *ngIf="newBanner.entities?.length > 1">
+            <li data-target="#banner_Carousel2" *ngFor="let data of newBanner.entities;let i = index"
+              [attr.data-slide-to]="i" [class.active]="i == 0"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item" *ngFor="let item of newBanner.entities;let i = index" [class.active]="i == 0">
+              <a *ngIf="item.image" href="{{item.linking}}" target="_blank">
+                <img src="{{item.image}}" alt="{{item.name}}" title="{{item.name}}" class="fit_cover" />
+              </a>
+            </div>
+          </div>
+          <a *ngIf="newBanner.entities.length > 1" class="carousel-control-prev" role="button" href="#banner_Carousel2"
+            data-slide="prev" title="" data-target="#banner_Carousel2">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a *ngIf="newBanner.entities.length > 1" class="carousel-control-next" role="button" href="#banner_Carousel2"
+            data-slide="next" title="" data-target="#banner_Carousel2">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="col-md-6 banner_03">
+  <div class="col-lg-10 col-lg-offset-2 col-md-12">
+    <div class="banner_03">
+      <div class="row p-h-lg">
+        <div id="banner_Carousel3" class="carousel slide bs-slider" data-ride="carousel" *ngIf="newBanner">
+          <ol class="carousel-indicators" *ngIf="newBanner.entities?.length > 1">
+            <li data-target="#banner_Carousel3" *ngFor="let data of newBanner.entities;let i = index"
+              [attr.data-slide-to]="i" [class.active]="i == 0"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item" *ngFor="let item of newBanner.entities;let i = index" [class.active]="i == 0">
+              <a *ngIf="item.image" href="{{item.linking}}" target="_blank">
+                <img src="{{item.image}}" alt="{{item.name}}" title="{{item.name}}" class="fit_cover" />
+              </a>
+            </div>
+          </div>
+          <a *ngIf="newBanner.entities.length > 1" class="carousel-control-prev" role="button" href="#banner_Carousel3"
+            data-slide="prev" title="" data-target="#banner_Carousel3">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a *ngIf="newBanner.entities.length > 1" class="carousel-control-next" role="button" href="#banner_Carousel3"
+            data-slide="next" title="" data-target="#banner_Carousel3">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -1,6 +1,0 @@
-<label class="input-smalllabel" for="select_location01">{{labelName}}</label>
-<select id="select_location01" class="form-control mt-0 select-type01" title="出發站" (change)="OutputValue($event.target.value)">
-  <ng-container *ngFor="let item of THSRstation">
-    <option [value]="item.StationID">{{item['StationName'].Zh_tw}}</option>
-  </ng-container>
-</select>

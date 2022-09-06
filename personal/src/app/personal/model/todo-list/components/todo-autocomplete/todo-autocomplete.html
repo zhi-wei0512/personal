@@ -1,0 +1,13 @@
+<div class="txtsearch" [class.deny]="disabled">
+  <div class="txt-ctrl">
+    <input type="txt" placeholder="{{placeholder}}" class="form-control txt-inputexpend" [disabled]="disabled"
+           (keyup)=filterOptions($event) value="{{selected?.label}}" #searchInput>
+  </div>
+  <div class="multi-selectbox" [hidden]="!filterList.length">
+    <ul>
+      <li *ngFor="let opt of filterList" class="txt-item" [class.selected]="isExistingOption(opt.label)"
+          (click)="selectItem(opt)">{{opt.label}}
+      </li>
+    </ul>
+  </div>
+</div>

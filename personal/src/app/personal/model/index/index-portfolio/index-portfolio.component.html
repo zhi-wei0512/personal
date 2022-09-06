@@ -1,0 +1,27 @@
+<section class="row clearfix bg-img portfolio">
+  <div class="col-lg-10 col-lg-offset-1 col-md-12 ">
+    <div class="portfolio">
+      <div class="cont-tit">
+        <h2>主題網站</h2>
+        <a class="more"><span>更多資訊</span></a>
+      </div>
+      <div class="row p-h-lg" *ngIf="remoteData$ | async as remoteData">
+        <ng-container *ngFor="let rd of remoteData; let i = index">
+          <div class="col-md-4 col-sm-12">
+            <div class="aside-box clearfix">
+              <a target="_blank">
+                <div class="image-wrap">
+                  <img src="{{rd.image.original}}" alt="{{rd.image.name}}" title="{{rd.image.name}}"
+                    class="fit_cover" />
+                </div>
+                <div class="details">
+                  <p class="multiline">{{rd.title}}</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</section>

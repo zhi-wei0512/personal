@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router, RouterModule, ActivatedRoute } from '@angular/router'; // CLI imports router
 import { HttpClient } from '@angular/common/http';
-import { GoogleSearch } from '../../model/template/googleSearch';
+// import { GoogleSearch } from '../../model/template/googleSearch';
 import * as $ from 'jquery';
 
 @Component({
@@ -12,7 +12,7 @@ import * as $ from 'jquery';
 export class GoogldeSearchComponent implements OnInit {
   constructor(private route: ActivatedRoute, private http: HttpClient) {}
   name;
-  AllValue = new GoogleSearch();
+  // AllValue = new GoogleSearch();
 
   datas: any[] = [];
   arr = [
